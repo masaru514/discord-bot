@@ -5,6 +5,7 @@ require('dotenv').config()
 const token = process.env.DISCORT_BOT_TOKEN
 
 client.on('ready', () => {
+    client.user.setUsername("🍖 休憩ちゃん 🍖")
     console.log('ready...');
 });
 
