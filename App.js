@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config()
-const token = process.env.DISCORT_BOT_TOKEN
+const token = process.env.DISCORD_BOT_TOKEN
 
 client.on('ready', () => {
     client.user.setUsername("🍖 休憩ちゃん 🍖")
