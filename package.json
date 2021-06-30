@@ -4,6 +4,8 @@
   "description": "",
   "main": "App.js",
   "scripts": {
+    "deploy": "gcloud functions deploy restChecker --entry-point restChecker --runtime nodejs12 --trigger-http --region asia-northeast1",
+    "start": "npx functions-framework --target=restChecker",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,8 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.9.0"
   }
 }
