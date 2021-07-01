@@ -21,6 +21,6 @@ npm run start
 
 3. **終わったら deploy をする**
 
-```
+```shell
 npm run deploy
 ```
